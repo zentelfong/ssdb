@@ -58,6 +58,8 @@ NetworkServer::NetworkServer(){
 	fdes = new Fdevents();
 	ip_filter = new IpFilter();
 	
+	lua = luaL_newstate();
+
 	readonly = false;
 	slowlog_timeout = 0;
 
@@ -98,6 +100,8 @@ NetworkServer::~NetworkServer(){
 	delete writer;
 	reader->stop();
 	delete reader;
+
+	lua_close(lua);
 }
 
 NetworkServer* NetworkServer::init(const char *conf_file, int num_readers, int num_writers){

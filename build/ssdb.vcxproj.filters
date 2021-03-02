@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="client">
+      <UniqueIdentifier>{8461ABF6-7003-D6CC-59BE-E92045FF5C1D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="lua">
+      <UniqueIdentifier>{C78D880B-3397-887C-BC12-9F7C281B947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{4C94880B-B89D-887C-4119-9F7CAD21947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ssdb">
+      <UniqueIdentifier>{91159E7C-7D4C-9F0D-2639-8510124F1B0F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{43339F7C-2F6A-A00D-D856-8610C46C1C0F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\backend_dump.h" />
+    <ClInclude Include="..\src\backend_sync.h" />
+    <ClInclude Include="..\src\client\SSDB_client.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\client\SSDB_impl.h">
+      <Filter>client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include.h" />
+    <ClInclude Include="..\src\lua\proc_lua.h">
+      <Filter>lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lua\sha1.h">
+      <Filter>lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\lua\utils.h">
+      <Filter>lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\fde.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\link.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\link_addr.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\link_redis.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\proc.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\resp.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\server.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\worker.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\proc_hash.h" />
+    <ClInclude Include="..\src\proc_kv.h" />
+    <ClInclude Include="..\src\proc_queue.h" />
+    <ClInclude Include="..\src\proc_sys.h" />
+    <ClInclude Include="..\src\proc_zset.h" />
+    <ClInclude Include="..\src\serv.h" />
+    <ClInclude Include="..\src\slave.h" />
+    <ClInclude Include="..\src\ssdb\binlog.h">
+      <Filter>ssdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ssdb\const.h">
+      <Filter>ssdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ssdb\iterator.h">
+      <Filter>ssdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ssdb\options.h">
+      <Filter>ssdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ssdb\ssdb.h">
+      <Filter>ssdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ssdb\ssdb_impl.h">
+      <Filter>ssdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ssdb\t_hash.h">
+      <Filter>ssdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ssdb\t_kv.h">
+      <Filter>ssdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ssdb\t_queue.h">
+      <Filter>ssdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ssdb\t_zset.h">
+      <Filter>ssdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ssdb\ttl.h">
+      <Filter>ssdb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\app.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\bytes.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\config.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\daemon.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\file.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\ip_filter.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\line.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\list.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\log.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\sorted_set.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\string_util.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\thread.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\backend_dump.cpp" />
+    <ClCompile Include="..\src\backend_sync.cpp" />
+    <ClCompile Include="..\src\client\SSDB_impl.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\client\demo.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\client\hello-ssdb.cpp">
+      <Filter>client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lua\proc_lua.cpp">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lua\sha1.cpp">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\lua\utils.cpp">
+      <Filter>lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\fde.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\fde_epoll.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\fde_select.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\link.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\link_addr.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\link_redis.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\proc.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\resp.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\server.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\test.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\test2.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\worker.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\proc_hash.cpp" />
+    <ClCompile Include="..\src\proc_kv.cpp" />
+    <ClCompile Include="..\src\proc_queue.cpp" />
+    <ClCompile Include="..\src\proc_sys.cpp" />
+    <ClCompile Include="..\src\proc_zset.cpp" />
+    <ClCompile Include="..\src\serv.cpp" />
+    <ClCompile Include="..\src\slave.cpp" />
+    <ClCompile Include="..\src\ssdb-server.cpp" />
+    <ClCompile Include="..\src\ssdb\binlog.cpp">
+      <Filter>ssdb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ssdb\iterator.cpp">
+      <Filter>ssdb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ssdb\options.cpp">
+      <Filter>ssdb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ssdb\ssdb_impl.cpp">
+      <Filter>ssdb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ssdb\t_hash.cpp">
+      <Filter>ssdb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ssdb\t_kv.cpp">
+      <Filter>ssdb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ssdb\t_queue.cpp">
+      <Filter>ssdb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ssdb\t_zset.cpp">
+      <Filter>ssdb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ssdb\test.cpp">
+      <Filter>ssdb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ssdb\ttl.cpp">
+      <Filter>ssdb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\app.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\bytes.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\config.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\log.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\sorted_set.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\test_sorted_set.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\test_thread.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -15,6 +15,12 @@ found in the LICENSE file.
 #include "proc.h"
 #include "worker.h"
 
+extern "C" {
+#include "lua.h"
+#include "lauxlib.h"
+}
+
+
 class Link;
 class Config;
 class IpFilter;
@@ -58,6 +64,7 @@ public:
 	bool need_auth;
     std::set<std::string> passwords;
 	double slowlog_timeout; // in ms, but in config file, it's in seconds
+	lua_State *lua;
 
 	~NetworkServer();
 	
